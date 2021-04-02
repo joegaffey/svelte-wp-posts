@@ -1,15 +1,14 @@
 <script type="js">
   import SEO from './components/Seo.svelte';
   import Button from './components/Button.svelte';
+  import Illustration from './components/Illustration.svelte';
 </script>
 
 <SEO/>
 
 <main>
   <h1>Hello Svelte!</h1>
-  <p>
-    Put an image here.
-  </p>
+  <Illustration />
 </main>
 <footer>
   <nav>
@@ -27,35 +26,6 @@
   --color-bg: rgba(92, 201, 245, 1.00);
   --color-text-main: #2800FF;
   --color-primary: #AFECE0;
-  --wrapper-height: 90vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-
-}
-
-/* Tablet portrait */
-@media (min-width: 768px) {
-  :root {
-    --wrapper-height: 87vh;
-    --image-max-width: 400px;
-    --image-margin: 5rem;
-  }
-}
-
-/* Tablet Landscape */
-@media (min-width: 1024px) {
-  :root {
-    --wrapper-height: 87vh;
-    --image-max-width: 500px;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1280px) {
-  :root {
-    --wrapper-height: 87vh;
-    --image-max-width: 500px;
-  }
 }
 
 @font-face {
@@ -92,15 +62,6 @@ h1 {
   font-weight: bold;
   font-size: 120px;
   line-height: 105%;
-}
-
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
-  cursor: pointer;
-  padding-left: 3.5rem;
 }
 
 
