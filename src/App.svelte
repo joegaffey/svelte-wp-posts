@@ -1,18 +1,29 @@
 <script type="js">
   console.log("Hello!");
   import SEO from './components/Seo.svelte';
+  import Button from './components/Button.svelte';
 </script>
 
 <SEO/>
 <div class='wrapper'>
   <h1>Hello world!</h1>
   <p>
-    Svelte is cool!
+    Put an image here.
   </p>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+    <Button url="https://glitch.com/~ivy-gratis-eagle">
+      hello!
+    </Button>
+  </footer>
 </div>
 
 <style>
-  /* Our default values set for mobile */
 :root {
   --color-bg: #FFFFA0;
   --color-text-main: #2800FF;
@@ -81,7 +92,7 @@
   justify-content: center;
 }
 
-.title {
+h1 {
   color: var(--color-text-main);
   font-family: HK Grotesk;
   font-style: normal;
@@ -90,69 +101,12 @@
   line-height: 105%;
 }
 
-.page .title {
-  font-size: 64px;
-}
-
 /* Navigation grid */
 .navigation {
   display: flex;
   justify-content: flex-end;
 }
 
-/* Our remix on glitch button + grid for other actions */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  align-items: center;
-  display: inline-flex;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  color: #000;
-  text-decoration: none;
-}
-
-.btn--remix:hover {
-  background-color: #D0FFF1;
-}
-
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-
-.btn--remix {
-  margin-right: 1rem;
-}
-
-.btn--click-me {
-  user-select: none;
-  cursor: pointer;
-}
-
-.btn--click-me:hover {
-  text-decoration: underline;
-}
-
-a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  text-decoration: none;
-  border-bottom: 6px solid var(--color-primary);
-  color: var(--foreground);
-  transition: background 0.2s linear;
-}
-
-a:hover {
-  background: var(--color-primary);
-}
 
 /* Very light scaling for our illustration */
 .illustration {
@@ -165,7 +119,7 @@ a:hover {
 
 
 /* Navigation grid */
-.footer {
+footer {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -173,7 +127,7 @@ a:hover {
   width: 100%;
 }
 
-.footer a:not(.btn--remix):link,
+footer a:not(.btn--remix):link,
         a:not(.btn--remix):visited {
   font-family: HK Grotesk;
   font-style: normal;
@@ -185,24 +139,20 @@ a:hover {
 }
 
 
-.footer ul {
+footer ul {
   display: flex;
   justify-content: space-between;
 }
 
 
-.footer li {
+footer li {
   list-style-type: none;
   padding: .5rem 1rem;
   border-right: 1px solid black;
 }
 
-.footer li:last-of-type {
+footer li:last-of-type {
   border: none;
 }
-
-
-.divider {
-  padding: 0 1rem;
-}
+  
 </style>
