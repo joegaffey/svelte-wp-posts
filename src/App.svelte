@@ -1,34 +1,33 @@
 <script type="js">
-  console.log("Hello!");
   import SEO from './components/Seo.svelte';
   import Button from './components/Button.svelte';
 </script>
 
 <SEO/>
-<div class='wrapper'>
-  <h1>Hello world!</h1>
+
+<main>
+  <h1>Hello Svelte!</h1>
   <p>
     Put an image here.
   </p>
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Home</a></li>
-      </ul>
-    </nav>
-    <Button url="https://glitch.com/~ivy-gratis-eagle">
-      hello!
-    </Button>
-  </footer>
-</div>
+</main>
+<footer>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </nav>
+  <Button url="https://glitch.com/~ivy-gratis-eagle">
+    Remix on Glitch
+  </Button>
+</footer>
 
 <style>
 :root {
   --color-bg: #FFFFA0;
   --color-text-main: #2800FF;
   --color-primary: #AFECE0;
-  --wrapper-height: 87vh;
+  --wrapper-height: 90vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
 
@@ -72,24 +71,18 @@
     format("opentype");
 }
 
-:global(body) {
+:global(body,html) {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
-}
-
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin-left: 2rem;
-  margin-top: 3rem;
-}
-
-.content {
+  height: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+
+main {
+  flex: 1 0 auto;
+  padding: 1rem;
 }
 
 h1 {
@@ -123,8 +116,8 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 1rem;
-  width: 100%;
+  padding: 1rem;
+  width: 90%;
 }
 
 footer a:not(.btn--remix):link,
