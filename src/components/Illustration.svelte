@@ -1,4 +1,5 @@
 <script>
+  import { spring } from 'svelte/motion';
 </script>
 
 <img src="https://glitch-hello-website.glitch.me/public/illustration.svg" />

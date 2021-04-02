@@ -57,7 +57,6 @@ main {
 
 h1 {
   color: var(--color-text-main);
-  font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
   font-size: 120px;
@@ -65,7 +64,7 @@ h1 {
 }
 
 
-/* Navigation grid */
+/* Footer Navigation grid */
 footer {
   display: flex;
   justify-content: space-between;
@@ -73,9 +72,6 @@ footer {
   padding: 1rem;
   width: 90%;
 }
-
-
-
 
 footer ul {
   display: flex;
@@ -94,7 +90,6 @@ footer li:last-of-type {
 }
 
 footer a {
-  font-family: HK Grotesk;
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
