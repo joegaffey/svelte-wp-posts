@@ -24,7 +24,7 @@
 
 <style>
 :root {
-  --color-bg: #FFFFA0;
+  --color-bg: rgba(92, 201, 245, 1.00);
   --color-text-main: #2800FF;
   --color-primary: #AFECE0;
   --wrapper-height: 90vh;
@@ -93,13 +93,6 @@ h1 {
   font-size: 120px;
   line-height: 105%;
 }
-
-/* Navigation grid */
-.navigation {
-  display: flex;
-  justify-content: flex-end;
-}
-
 
 /* Very light scaling for our illustration */
 .illustration {
