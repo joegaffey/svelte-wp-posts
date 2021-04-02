@@ -113,16 +113,7 @@ footer {
   width: 90%;
 }
 
-footer a:not(.btn--remix):link,
-        a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
+
 
 
 footer ul {
@@ -140,5 +131,14 @@ footer li {
 footer li:last-of-type {
   border: none;
 }
-  
+
+footer a {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  border-style: none;
+} 
 </style>

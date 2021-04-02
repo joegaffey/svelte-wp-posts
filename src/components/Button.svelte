@@ -2,7 +2,6 @@
   export let url;
   
   function handleButtonClick(event) {
-    console.log("We clicked the button!", url);
     location.href = url;
   }
 </script>
